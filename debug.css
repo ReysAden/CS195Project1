@@ -1,0 +1,64 @@
+.testing-area {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.testing-area h3 {
+    margin-top: 0;
+    color: #495057;
+    text-align: center;
+}
+
+#debug-output {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.testing-area button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.testing-area button:hover {
+    background-color: #5a6268;
+}
+
+.debug-entry {
+    margin: 5px 0;
+    padding: 5px 8px;
+    border-left: 3px solid #007bff;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+}
+
+.debug-entry.success {
+    border-left-color: #28a745;
+    background-color: #d4edda;
+}
+
+.debug-entry.warning {
+    border-left-color: #ffc107;
+    background-color: #fff3cd;
+}
+
+.debug-entry.error {
+    border-left-color: #dc3545;
+    background-color: #f8d7da;
+}
