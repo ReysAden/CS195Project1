@@ -51,7 +51,7 @@ body.game-page {
     font-size: 18px; 
     cursor: pointer; 
     user-select: none; 
-    transition: background-color 0.3s, transform 0.2s; 
+    transition: background-color 0.3s, transform 0.7s linear;
 }
 
 .grid-item.selected {
@@ -59,4 +59,51 @@ body.game-page {
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+.grid-item.connection{
+    background-color: green;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 90%;
+        gap: 8px;
+    }
+    
+    .grid-item {
+        padding: 18px;
+        font-size: 16px;
+    }
+    
+    button, a.btn {
+        padding: 12px 24px;
+        font-size: 18px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .grid-container {
+        width: 95%;
+        gap: 6px;
+    }
+    
+    .grid-item {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    button, a.btn {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
